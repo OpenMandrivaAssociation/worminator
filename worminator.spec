@@ -2,7 +2,7 @@ Name:		worminator
 Version:	3.0R2.1
 Release:	%mkrel 1
 Summary:	Sidescrolling platform and shoot 'em up action game
-Group:		Amusements/Games
+Group:		Games/Arcade
 License:	GPLv2+
 URL:		http://sourceforge.net/projects/worminator/
 Source0:	http://download.sourceforge.net/worminator/worminator-%{version}.tar.gz
