@@ -8,7 +8,6 @@ URL:		http://sourceforge.net/projects/worminator/
 Source0:	http://download.sourceforge.net/worminator/worminator-%{version}.tar.gz
 Source1:	worminator.png
 Patch0:		worminator-3.0R2.1-speed.patch
-BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}
 BuildRequires:	allegro-devel
 Requires:	worminator-data >= %{version}
 
