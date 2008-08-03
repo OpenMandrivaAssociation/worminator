@@ -1,6 +1,6 @@
 Name:		worminator
 Version:	3.0R2.1
-Release:	%mkrel 3
+Release:	%mkrel 4
 Summary:	Sidescrolling platform and shoot 'em up action game
 Group:		Games/Arcade
 License:	GPLv2+
