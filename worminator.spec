@@ -1,6 +1,6 @@
 Name:		worminator
 Version:	3.0R2.1
-Release:	%mkrel 4
+Release:	%mkrel 5
 Summary:	Sidescrolling platform and shoot 'em up action game
 Group:		Games/Arcade
 License:	GPLv2+
@@ -8,6 +8,7 @@ URL:		http://sourceforge.net/projects/worminator/
 Source0:	http://download.sourceforge.net/worminator/worminator-%{version}.tar.gz
 Source1:	worminator.png
 Patch0:		worminator-3.0R2.1-speed.patch
+Patch1:		worminator-3.0R2.1-mdv-fix-str-fmt.patch
 BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}
 BuildRequires:	allegro-devel
 Requires:	worminator-data >= %{version}
@@ -19,13 +20,14 @@ full screen scrolling, sound and music, and much more!
 
 %prep
 %setup -q
-%patch -p1 -z .speed
+%patch0 -p1 -z .speed
+%patch1 -p1 -b .strfmt
 sed -i 's/\r//' ReadMe.txt
 
 %build
 gcc %{optflags} -fsigned-char -Wno-deprecated-declarations \
   -Wno-char-subscripts -DDATADIR=\"%{_datadir}/%{name}/\" -o %{name} \
-  Worminator.c `allegro-config --libs`
+  Worminator.c `allegro-config --libs` -lm
 
 %install
 rm -rf %{buildroot}
