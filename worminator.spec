@@ -67,3 +67,39 @@ rm -rf %{buildroot}
 %{_datadir}/applications/mandriva-%{name}.desktop
 %{_datadir}/icons/hicolor/32x32/apps/worminator.png
 
+
+
+%changelog
+* Wed Dec 08 2010 Oden Eriksson <oeriksson@mandriva.com> 3.0R2.1-7mdv2011.0
++ Revision: 615460
+- the mass rebuild of 2010.1 packages
+
+* Thu Dec 31 2009 Emmanuel Andry <eandry@mandriva.org> 3.0R2.1-6mdv2010.1
++ Revision: 484589
+- rebuild for new allegro
+
+* Sat Dec 05 2009 Jérôme Brenier <incubusss@mandriva.org> 3.0R2.1-5mdv2010.1
++ Revision: 473887
+- number first patch macro
+- fix str fmt
+- fix underlinking
+
+* Sun Aug 03 2008 Thierry Vignaud <tv@mandriva.org> 3.0R2.1-4mdv2009.0
++ Revision: 262149
+- rebuild
+
+* Wed Jul 30 2008 Thierry Vignaud <tv@mandriva.org> 3.0R2.1-3mdv2009.0
++ Revision: 256382
+- rebuild
+- kill re-definition of %%buildroot on Pixel's request
+
+  + Olivier Blin <oblin@mandriva.com>
+    - restore BuildRoot
+
+* Sat Oct 27 2007 Adam Williamson <awilliamson@mandriva.org> 3.0R2.1-1mdv2008.1
++ Revision: 102478
+- correct group
+- spec based on Fedora, thanks
+- import worminator
+
+
