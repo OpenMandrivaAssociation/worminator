@@ -4,7 +4,7 @@ Release:	8
 Summary:	Sidescrolling platform and shoot 'em up action game
 Group:		Games/Arcade
 License:	GPLv2+
-URL:		http://sourceforge.net/projects/worminator/
+URL:		https://sourceforge.net/projects/worminator/
 Source0:	http://download.sourceforge.net/worminator/worminator-%{version}.tar.gz
 Source1:	worminator.png
 Patch0:		worminator-3.0R2.1-speed.patch
